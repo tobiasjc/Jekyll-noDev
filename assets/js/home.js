@@ -36,4 +36,4 @@ $("#on-roll-head a.nav-link").on("click", function (e) {
     scrollBy(0, -postSize);
 });
 
-$('body').scrollspy({ target: '#spied-body', offset: 50 });
+$('body').scrollspy({ target: '#spied-body', offset: (rollHead.height() + 10) });
