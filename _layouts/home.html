@@ -23,8 +23,6 @@
     </div>
     {% include footer.html %}
 
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
@@ -35,7 +33,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="../assets/js/home.js"></script>
+    <script src="{{ "../assets/js/home.js" | prepend: site.baseurl }}"></script>
 </body>
 
 </html>
