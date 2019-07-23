@@ -4,152 +4,302 @@ layout: home
 permalink: "/"
 ---
 
-{% include header.html %}
+<div class="row">
+    <div class="col">
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm">
-            <h2>Academic Projects</h2>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    Operations Research
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/OperationsResearch/SchoolSchedule-CPLEX"
-                                target="_blank">School schedule formulation using linear programming with IBM-CPLEX
-                            </a>
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/OperationsResearch/SchoolSchedule-CPLEX/Pesquisa_Operacional___Hor_rio_Escolas_com_Aulas_Geminadas.pdf"
-                                class="btn btn-sm btn-outline-danger">
-                                <i class="fa fa-file-pdf-o fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/OperationsResearch/TSP_CPLEX"
-                                target="_blank">TSP problem solver using iterative linear programming with IBM-CPLEX
-                            </a>
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/OperationsResearch/TSP_CPLEX/TSP___Modelo_Linear_Iterativo.pdf"
-                                class="btn btn-sm btn-outline-danger">
-                                <i class="fa fa-file-pdf-o fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="list-group-item">
-                    Analysis and Design of Algorithms
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/AnalysisAndDesignOfAlgorithms/MemeticAlgorithmMDMP"
-                                target="_blank">Data collector drone routing solver using memetic algorithms
-                            </a>
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/AnalysisAndDesignOfAlgorithms/MemeticAlgorithmMDMP/Optimized_Drone_Route_Using_Memetic_Algorithm.pdf"
-                                class="btn btn-sm btn-outline-danger">
-                                <i class="fa fa-file-pdf-o fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="list-group-item">
-                    Performance Appraisal/Simulation
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/PerformanceAppraisal/router_selective_queue"
-                                target="_blank">Event driven simulation on networks with QoS on queue
-                            </a>
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/PerformanceAppraisal/router_selective_queue/An_lise_de_Desempenho___Trabalho_2.pdf"
-                                class="btn btn-sm btn-outline-danger">
-                                <i class="fa fa-file-pdf-o fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="list-group-item">
-                    Information Retrieval
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/InformationRetrieval"
-                                target="_blank">Framework to populate databases with Wikipedia pages,query
-                                search and ranked exhibition
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="list-group-item">
-                    Graphs - Classic Algorithms
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/Graphs/CaminhoMinimo"
-                                target="_blank">Shortest Path using Bellman Ford or Dijkstra algorithms
-                            </a>
-                            <a target="_blank"
-                                href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/Graphs/CaminhoMinimo/Bellman_Ford_and_Dijkstra_s_algorithm_Report.pdf"
-                                class="btn btn-sm btn-outline-danger">
-                                <i class="fa fa-file-pdf-o fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/Graphs/MaximumFlow"
-                                target="_blank">Maximum Flow using Ford-Fulkerson method
-                            </a>
-                            <a target="_blank"
-                                href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/Graphs/MaximumFlow/FordFulkersonMethod.pdf"
-                                class="btn btn-sm btn-outline-danger">
-                                <i class="fa fa-file-pdf-o fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/Graphs/agm"
-                                target="_blank">Minimum Spanning Tree
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="list-group-item">
-                    Parallel Programming and Image Processing
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/ParallelProgramming/parallel_counting_stars"
-                                target="_blank">OpenMPI and OpenMP framework to count stars from images
-                            </a>
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/ParallelProgramming/parallel_counting_stars/Programa__o_Paralela___Contando_Estrelas.pdf"
-                                class="btn btn-sm btn-outline-danger">
-                                <i class="fa fa-file-pdf-o fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="list-group-item">
-                    Compilers
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/Compilers/Simples-VM"
-                                target="_blank">"Simples" language implementation using BISON/FLEX
-                            </a>
-                            <a href="https://github.com/tobiasjc/tobiasjc.github.io/tree/master/projects/academic/Compilers/Simples-VM/documentacao.pdf"
-                                class="btn btn-sm btn-outline-danger">
-                                <i class="fa fa-file-pdf-o fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!--End of projects list-->
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
 
-        <!--Achievements list-->
-        <div class="col-sm">
-            <h2>Achievements</h2>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    Data Science
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="https://www.unifal-mg.edu.br/comunicacao/time-unifal-mg-final-competicao-data-science-game"
-                                target="_blank">2017 Data Science Game finalist as a Machine Learning expert
-                                for the FirstBrazilianSniper team</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "academic-work" %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
     </div>
+    <div class="col">
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "achievments"  %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "achievments"  %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "achievments"  %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "achievments"  %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "achievments"  %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "achievments"  %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "achievments"  %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "achievments"  %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "achievments"  %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        <ul class="list-group-flush">
+            {% for post in site.posts %}
+            {% if post.belongs == "achievments"  %}
+            <li class="list-group-item">
+                {% for category in post.categories %}
+                {{ category }}
+                {% endfor %}
+                <br>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
 </div>

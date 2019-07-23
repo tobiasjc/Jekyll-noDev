@@ -1,43 +1,82 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="col">
-        <div class="row">
-            <a class="navbar-brand mr-auto" href="/">{{ page.author }}</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse ml-auto" id="navbarContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+<!--Main header-->
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-md navbar-light position-sticky" style="background-color: rgb(149, 251, 255)"
+        id="nav-full">
+        <div class="col">
+            <div class="row">
+                <a class="navbar-brand" href="/">{{ page.author }}</a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-pills ml-auto nav-justified" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Graduation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row p-3">
+                <img src="./assets/images/thumb.png" class="rounded-circle mx-auto d-block"
+                    alt="A photo of José Tobias in 2017, smiling in front of books, after being classified for the 2017 Data Science Game finals." />
+            </div>
+            <div class="row justify-content-center m-2">
+                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#emails" aria-expanded="false"
+                    aria-controls="emails">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+            <div class="row justify-content-center m-2">
+                <div class="collapse border border-primary" id="emails">
+                    <div class="card">
+                        <a class="mr-3" href="mailto:jose.tobias@outlook.com">
+                            <button class="btn">
+                                <i class="fa fa-user"></i>
+                            </button>
+                            <span>jose.tobias@outlook.com</span>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                    </div>
+                    <div class="card">
+                        <a class="mr-3" href="mailto:a16007@bcc.unifal-mg.edu.br">
+                            <button class="btn">
+                                <i class="fa fa-graduation-cap"></i>
+                            </button>
+                            <span>a16007@bcc.unifal-mg.edu.br</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center m-2">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn btn-sm" target="_blank" href="https://linkedin.com/in/tobiasjc">
+                            <i class="fa fa-linkedin"></i>
+                            Linkedin
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="btn btn-sm" target="_blank" href="https://github.com/tobiasjc">
+                            <i class=" fa fa-github-alt"></i>
+                            GitHub
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-sm" href="">
+                            <i class="fa fa-facebook"></i>
+                            some social
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="row">
-            <img src="./assets/images/thumb.png" class="rounded-circle mx-auto d-block"
-                alt="A photo of José Tobias in 2017, smiling in front of books, after being classified for the 2017 Data Science Game finals." />
-        </div>
-        <div class="row">
-
-        </div>
-    </div>
-</nav>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top to-fade" id="on-roll-head">
+        <a class="navbar-brand" href="/">{{ page.author }}</a>
+    </nav>
+</div>
+<!--Scroll header-->
