@@ -20,12 +20,12 @@ const triggerPoint = header.height() - rollHead.height();
 const entities = [rollHead, rollFoot];
 
 // if the page is reload in the middle
-(height > triggerPoint) ? entities.forEach(shower) : entities.forEach(hider);
+(height >= triggerPoint) ? entities.forEach(shower) : entities.forEach(hider);
 
 // scroll control
 $(window).scroll(function () {
     var height = $(window).scrollTop();
-    (height > triggerPoint) ? entities.forEach(shower) : entities.forEach(hider);
+    (height >= triggerPoint) ? entities.forEach(shower) : entities.forEach(hider);
 });
 
 // scrollback on posts size
@@ -35,3 +35,5 @@ $("#on-roll-head a.nav-link").on("click", function (e) {
     $($(this).attr('href'))[0].scrollIntoView();
     scrollBy(0, -postSize);
 });
+
+$('body').scrollspy({ target: '#spied-body', offset: 50 });
