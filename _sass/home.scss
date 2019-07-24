@@ -3,10 +3,6 @@
   background: rgb(149, 251, 255);
 }
 
-#content {
-  padding-bottom: 100px;
-}
-
 #intro {
   min-height: 100vh;
   min-width: 100vw;
@@ -18,7 +14,7 @@
 
 .dropdown-menu-center {
   right: auto;
-  left: 50%;
+  left: -50%;
   -webkit-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
