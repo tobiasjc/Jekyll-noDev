@@ -20,12 +20,12 @@ const triggerPoint = (header.height() - rollHead.height());
 const entities = [rollHead, rollFoot];
 
 // if the page is reload in the middle
-(height > triggerPoint) ? entities.forEach(shower) : entities.forEach(hider);
+(height > triggerPoint) ? entities.forEach(shower): entities.forEach(hider);
 
 // scroll control
-$(window).scroll(function () {
+$(window).scroll(function() {
     var height = $(window).scrollTop();
-    (height > triggerPoint) ? entities.forEach(shower) : entities.forEach(hider);
+    (height > triggerPoint) ? entities.forEach(shower): entities.forEach(hider);
 });
 
 // scrollback on posts size
@@ -35,7 +35,7 @@ const backAmount = projectsTag.height();
 
 const toBackRoll = $("#on-roll-head a.nav-link");
 
-toBackRoll.on("click", function (e) {
+toBackRoll.on("click", function(e) {
     e.preventDefault();
     console.log(e.currentTarget);
     $($(this).attr('href'))[0].scrollIntoView();

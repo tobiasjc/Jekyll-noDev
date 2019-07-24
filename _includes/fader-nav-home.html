@@ -1,0 +1,21 @@
+<div class="container">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top to-fade" id="on-roll-head">
+        <a class="navbar-brand ml-auto" href="#nav-full">{{ page.author }}</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#fadedNavbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-pills ml-auto" id="fadedNavbarContent">
+            <ul class="d-flex flex-column navbar-nav text-center mr-auto nav-pills">
+                {% for category in site.data.info.categories_ord %}
+                <li class="nav-item ll-5" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    {% assign words = category | split: "-" %}
+                    {% capture titlecase_ord %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
+                    <div class="p-1">
+                        <a class="nav-link" href="#{{ category }}"><span class="p-2">{{ titlecase_ord }}</span></a>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+</div>

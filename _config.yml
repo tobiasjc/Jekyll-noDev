@@ -1,0 +1,28 @@
+email: "jose.tobias@outlook.com"
+author: "José Tobias"
+twitter_username: "none"
+github_username: "tobiasjc"
+
+
+# Build settings
+markdown: kramdown
+# theme: "Jekyll-noDev"
+
+
+# Configurations
+defaults:
+  - scope:
+      path: "assets/js"
+    values:
+      js: true
+
+  - scope:
+      path: "assets/imges"
+    values:
+      image: true
+  
+  - scope:
+      path: "assets/pdf"
+    values:
+      pdf: true
+

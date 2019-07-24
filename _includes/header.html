@@ -1,23 +1,25 @@
 <!--Main header-->
 <div class="container-fluid p-0">
-    <nav class="navbar navbar-expand-md navbar-light position-sticky" style="background-color: rgb(149, 251, 255)"
-        id="nav-full">
+    <nav class="navbar navbar-expand-md navbar-light position-sticky" style="background-color: rgb(149, 251, 255)" id="nav-full">
         <!--save start-->
         <div class="col">
-            <div class="row">
-                <a class="navbar-brand" href="#nav-full">{{ site.author }}</a>
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="row justify-content-center">
+                <div class="d-flex flex-column">
+                    <div><a class="navbar-brand" href="#nav-full">{{ site.author }}</a></div>
+                    <div class="muted small">{{ site.data.config.logo_message }}</div>
+                </div>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse nav-pills ml-auto nav-justified" id="navbarContent">
                     <ul class="navbar-nav ml-auto">
+                        {% for category_ord in site.data.info.categories_ord %}
+                        {% assign words = category_ord | split: "-" %}
+                        {% capture titlecase_ord %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#projects-div">Projects</a>
+                            <a class="nav-link" href="#{{ category_ord }}">{{ titlecase_ord }}</a>
                         </li>
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#achievments-div">Achievments</a>
-                        </li>
+                        {% endfor %}
                         <li class="nav-item">
                             <a class="nav-link" href="/about/">About</a>
                         </li>
@@ -26,19 +28,17 @@
             </div>
             <hr>
             <div class="row p-3">
-                <img src="./assets/images/thumb.png" class="rounded-circle mx-auto d-block" width="240"
-                    alt="A photo of José Tobias in 2017, smiling in front of books, after being classified for the 2017 Data Science Game finals." />
+                <img src="./assets/images/thumb.png" class="rounded-circle mx-auto d-block" width="240" alt="A photo of José Tobias in 2017, smiling in front of books, after being classified for the 2017 Data Science Game finals." />
             </div>
             <div class="row justify-content-center m-2">
-                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#emails" aria-expanded="false"
-                    aria-controls="emails">
+                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#emails" aria-expanded="false" aria-controls="emails">
                     <i class="fa fa-envelope"></i>
                 </a>
             </div>
             <div class="row justify-content-center m-2">
                 <div class="collapse border border-primary rounded" id="emails">
                     <div class="card">
-                        <a class="mr-3" href="mailto:jose.tobias@outlook.com">
+                        <a class="mr-1" href="mailto:jose.tobias@outlook.com">
                             <button class="btn">
                                 <i class="fa fa-user"></i>
                             </button>
@@ -46,7 +46,7 @@
                         </a>
                     </div>
                     <div class="card">
-                        <a class="mr-3" href="mailto:a16007@bcc.unifal-mg.edu.br">
+                        <a class="mr-1" href="mailto:a16007@bcc.unifal-mg.edu.br">
                             <button class="btn">
                                 <i class="fa fa-graduation-cap"></i>
                             </button>
