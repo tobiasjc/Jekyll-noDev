@@ -13,13 +13,13 @@ permalink: "/"
             <li class="list-group-item" id="projects-tag">
                 {% assign words = category[0] | split: "-" %}
                 {% capture titlecase-category %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
-                <h2>{{ titlecase-category }}</h2>
+                <h2><span id="title-category">{{ titlecase-category }}</span></h2>
             </li>
             {% for post in category[1] %}
             {% assign words = post.subcategory | split: "-" %}
             {% capture titlecase-subcategory %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
             <li class="list-group-item">
-                <span name="titles-out" >{{ titlecase-subcategory }}</span> <br />
+                <span name="titles-out">{{ titlecase-subcategory }}</span> <br />
                 <span name="legible-out">{{ post.date | date_to_long_string }}</span> <br />
                 <span name="titles-out">{{ post.title }}</span> <br />
                 <span name="legible-out">{{ post.description }}</span>

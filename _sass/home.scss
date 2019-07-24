@@ -14,7 +14,11 @@
     transform: translate(-50%, 0);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Frank+Ruhl+Libre|Taviraj|Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Lora|Frank+Ruhl+Libre|Taviraj|Petit+Formal+Script&display=swap');
+
+#title-category {
+    font-family: 'Lora', serif;
+}
 
 #logo-message {
     font-family: 'Petit Formal Script', cursive;
@@ -29,5 +33,5 @@
 }
 
 [name="titles-out"] {
-    font-family: 'Cabin Condensed', sans-serif;
+    font-family: 'Lora', serif;
 }
