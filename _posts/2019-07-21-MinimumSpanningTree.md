@@ -3,7 +3,8 @@ title: "Information Retrieval Framework for English Wikipedia of mathematical in
 author: "José Tobias"
 description: Implementation of "SIMPLES" language and translation to MIPS instructions
 layout: post
-category: academic-project
+category: academic-projects
+subcategory: graphs
 ---
 
 This will be text here

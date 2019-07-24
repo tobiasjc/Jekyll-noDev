@@ -1,9 +1,10 @@
 ---
-title: "Information Retrieval Framework for English Wikipedia of mathematical information"
+title: "Shortest path with Bellman-Ford method and Dijkstra algorithm"
 author: "José Tobias"
-description: Implementation of "SIMPLES" language and translation to MIPS instructions
+description: "An implementation of two famous algorithms to solve shortest path problems in graphs"
 layout: post
-category: academic-project
+category: academic-projects
+subcategory: graphs
 ---
 
 This will be text here

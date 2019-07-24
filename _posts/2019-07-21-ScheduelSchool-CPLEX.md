@@ -1,9 +1,10 @@
 ---
-title: "Information Retrieval Framework for English Wikipedia of mathematical information"
+title: "School schedule formulator with quality objectives using linear models for IBM-CPLEX"
 author: "José Tobias"
-description: Implementation of "SIMPLES" language and translation to MIPS instructions
+description: "Linear model capable of formulate school schedules using various quality objectives such as window removal"
 layout: post
-category: academic-project
+category: academic-projects
+subcategory: operations-research
 ---
 
 This will be text here

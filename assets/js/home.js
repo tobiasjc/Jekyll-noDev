@@ -37,10 +37,11 @@ const toBackRoll = $("#on-roll-head a.nav-link");
 
 toBackRoll.on("click", function (e) {
     e.preventDefault();
+    console.log(e.currentTarget);
     $($(this).attr('href'))[0].scrollIntoView();
     scrollBy(0, -backAmount);
 });
 
 // scrollspy activation offset
-const offSet = $(window).height() * 0.2;
+const offSet = $(window).height() * 0.1;
 $('body').scrollspy({ target: '#spied-body', offset: offSet });

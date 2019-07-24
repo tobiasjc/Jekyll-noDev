@@ -11,13 +11,17 @@ permalink: "/"
         <ul class="list-group list-group-flush" id="{{ category[0] }}">
             <li class="list-group-item" id="projects-tag">
                 {%  assign words =  category[0] | split: "-"  %}
-                {% capture titlecase %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
-                <h2>{{ titlecase }}</h2>
+                {% capture titlecase-category %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
+                <h2>{{ titlecase-category }}</h2>
             </li>
             {% for post in category[1] %}
             <li class="list-group-item">
-                {{ post.date | date_to_long_string }}
-                {{ post.title }}
+                {{ post.date | date_to_long_string }} <br />
+                {%  assign words =  post.subcategory | split: "-"  %}
+                {% capture titlecase-subcategory %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
+                {{ titlecase-subcategory }} <br />
+                {{ post.title }} <br>
+                {{ post.description }}
             </li>
             {% endfor %}
         </ul>
