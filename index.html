@@ -3,11 +3,11 @@ author: "José Tobias"
 layout: home
 permalink: "/"
 ---
-
-
 <div class="row">
     <div class="col align-items-center text-center">
+        {% for category_ord in site.data.info.categories_ord %}
         {% for category in site.categories %}
+        {% if category[0] == category_ord %}
         <ul class="list-group list-group-flush" id="{{ category[0] }}">
             <li class="list-group-item" id="projects-tag">
                 {%  assign words =  category[0] | split: "-"  %}
@@ -15,16 +15,38 @@ permalink: "/"
                 <h2>{{ titlecase-category }}</h2>
             </li>
             {% for post in category[1] %}
+            {% assign words =  post.subcategory | split: "-"  %}
+            {% capture titlecase-subcategory %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
             <li class="list-group-item">
-                {{ post.date | date_to_long_string }} <br />
-                {%  assign words =  post.subcategory | split: "-"  %}
-                {% capture titlecase-subcategory %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
                 {{ titlecase-subcategory }} <br />
+                {{ post.date | date_to_long_string }} <br />
                 {{ post.title }} <br>
                 {{ post.description }}
             </li>
             {% endfor %}
         </ul>
+        {% endif %}
         {% endfor %}
+        {% endfor %}
+
+        <!-- {% for category in site.categories %}
+        <ul class="list-group list-group-flush" id="{{ category[0] }}">
+            <li class="list-group-item" id="projects-tag">
+                {%  assign words =  category[0] | split: "-"  %}
+                {% capture titlecase-category %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
+                <h2>{{ titlecase-category }}</h2>
+            </li>
+            {% for post in category[1] %}
+            {%  assign words =  post.subcategory | split: "-"  %}
+            {% capture titlecase-subcategory %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
+            <li class="list-group-item">
+                {{ titlecase-subcategory }} <br />
+                {{ post.date | date_to_long_string }} <br />
+                {{ post.title }} <br>
+                {{ post.description }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endfor %} -->
     </div>
 </div>

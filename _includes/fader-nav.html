@@ -6,12 +6,29 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse nav-pills ml-auto" id="fadedNavbarContent">
-            <ul class="navbar-nav mr-auto nav-pills">
+            <!-- <div class="d-flex flex-column">
+                <div class="d-flex flex-row-reverse">
+                    <div class="p-2">1</div>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <div class="p-2">2</div>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <div class="p-2">3</div>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <div class="p-2">4</div>
+                </div>
+            </div> -->
+
+            <ul class="d-flex flex-column navbar-nav text-center mr-auto nav-pills">
                 {% for category in site.categories %}
                 <li class="nav-item ll-5" data-toggle="collapse" data-target=".navbar-collapse.show">
                     {%  assign words =  category[0] | split: "-"  %}
                     {% capture titlecase %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
-                    <a class="nav-link" href="#{{ category[0] }}">{{ titlecase }}</a>
+                    <div class="p-1">
+                        <a class="nav-link" href="#{{ category[0] }}"><span class="p-2">{{ titlecase }}</span></a>
+                    </div>
                 </li>
                 {% endfor %}
             </ul>
