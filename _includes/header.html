@@ -13,10 +13,13 @@
                 <div class="collapse navbar-collapse nav-pills ml-auto nav-justified" id="navbarContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">About</a>
+                            <a class="nav-link" href="/about/">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Graduation</a>
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <a class="nav-link" href="#projects-div">Projects</a>
+                        </li>
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <a class="nav-link" href="#achievments-div">Achievments</a>
                         </li>
                     </ul>
                 </div>
@@ -33,7 +36,7 @@
                 </a>
             </div>
             <div class="row justify-content-center m-2">
-                <div class="collapse border border-primary" id="emails">
+                <div class="collapse border border-primary rounded" id="emails">
                     <div class="card">
                         <a class="mr-3" href="mailto:jose.tobias@outlook.com">
                             <button class="btn">

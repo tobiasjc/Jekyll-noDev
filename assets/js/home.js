@@ -16,7 +16,7 @@ var height = $(window).scrollTop();
 const header = $("#nav-full");
 const rollHead = $("#on-roll-head");
 const rollFoot = $("#on-roll-foot");
-const triggerPoint = header.height() - rollHead.height();
+const triggerPoint = header.height() - (rollHead.height() + 1);
 const entities = [rollHead, rollFoot];
 
 // if the page is reload in the middle
@@ -29,11 +29,13 @@ $(window).scroll(function () {
 });
 
 // scrollback on posts size
-var postSize = $("#achievments-list li").first().height();
+var scrollBack = rollHead.height();
 $("#on-roll-head a.nav-link").on("click", function (e) {
     e.preventDefault();
     $($(this).attr('href'))[0].scrollIntoView();
-    scrollBy(0, -postSize);
+    scrollBy(0, -scrollBack);
 });
 
-$('body').scrollspy({ target: '#spied-body', offset: (rollHead.height() + 10) });
+// scrollspy activation offset
+const offSet = rollHead.height();
+$('body').scrollspy({ target: '#spied-body', offset: offSet });
