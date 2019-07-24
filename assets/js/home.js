@@ -33,7 +33,7 @@ const projectsTag = $("#projects-tag");
 const achievmentsTag = $("#achievments-tag");
 const backAmount = projectsTag.height();
 
-const toBackRoll = $("#on-roll-head a.nav-link");
+const toBackRoll = $("a[name='need-roll'");
 
 toBackRoll.on("click", function(e) {
     e.preventDefault();

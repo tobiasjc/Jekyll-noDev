@@ -1,6 +1,6 @@
 <!--Main header-->
 <div class="container-fluid p-0">
-    <nav class="navbar navbar-expand-md navbar-light position-sticky" style="background-color: rgb(149, 251, 255)" id="nav-full">
+    <nav class="navbar navbar-expand-md navbar-light position-sticky main-coloring" id="nav-full">
         <!--save start-->
         <div class="col">
             <div class="row justify-content-center">
@@ -13,15 +13,37 @@
                 </button>
                 <div class="collapse navbar-collapse nav-pills ml-auto nav-justified" id="navbarContent">
                     <ul class="navbar-nav ml-auto">
-                        {% for category_ord in site.data.info.categories_ord %}
+                        {% for category_ord in site.data.config.categories_ord %}
                         {% assign words = category_ord | split: "-" %}
                         {% capture titlecase_ord %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
+                        {% capture icon_category %}
+                        {% for category_icon in site.data.config.categories_icons %}
+                        {% if category_ord contains category_icon[0] %}
+                        {{ category_icon[1] }}
+                        {% break %}
+                        {% endif %}
+                        {% endfor %}
+                        {% endcapture %}
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#{{ category_ord }}">{{ titlecase_ord }}</a>
+                            <a class="nav-link" href="#{{ category_ord }}" name="need-roll">
+                                <div class="col">
+                                    <i class="{{ icon_category }} mr-2"></i>
+                                </div>
+                                <div class="col">
+                                    {{ titlecase_ord }}
+                                </div>
+                            </a>
                         </li>
                         {% endfor %}
                         <li class="nav-item">
-                            <a class="nav-link" href="/about/">About</a>
+                            <a class="nav-link" href="/about/">
+                                <div class="col">
+                                    <i class="fa fa-question mr-2"></i>
+                                </div>
+                                <div class="col">
+                                    About
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>

@@ -1,21 +1,16 @@
-.to-fade {
-  visibility: hidden;
-  background: rgb(149, 251, 255);
+.main-coloring {
+    background: rgb(149, 251, 255);
 }
 
-#intro {
-  min-height: 100vh;
-  min-width: 100vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex; /* NEW */
+
+.to-fade {
+    visibility: hidden;
 }
 
 .dropdown-menu-center {
-  right: auto;
-  left: -50%;
-  -webkit-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+    right: auto;
+    left: -50%;
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 }

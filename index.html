@@ -6,7 +6,7 @@ permalink: "/"
 ---
 <div class="row">
     <div class="col align-items-center text-center">
-        {% for category_ord in site.data.info.categories_ord %}
+        {% for category_ord in site.data.config.categories_ord %}
         {% for category in site.categories %}
         {% if category[0] == category_ord %}
         <ul class="list-group list-group-flush" id="{{ category[0] }}">

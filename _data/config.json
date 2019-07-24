@@ -1,3 +1,14 @@
 {
-	"logo_message": "noDev, think"
+    "logo_message": "noDev, think",
+
+    "categories_ord": [
+        "achievments",
+        "academic-projects"
+    ],
+
+    "categories_icons":
+    {
+        "achiev": "fa fa-star",
+        "acad": "fa fa-graduation-cap"
+    }
 }
