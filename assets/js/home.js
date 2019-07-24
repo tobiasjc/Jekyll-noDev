@@ -16,7 +16,7 @@ var height = $(window).scrollTop();
 const header = $("#nav-full");
 const rollHead = $("#on-roll-head");
 const rollFoot = $("#on-roll-foot");
-const triggerPoint = header.height() - (rollHead.height());
+const triggerPoint = (header.height() - rollHead.height());
 const entities = [rollHead, rollFoot];
 
 // if the page is reload in the middle
@@ -29,26 +29,17 @@ $(window).scroll(function () {
 });
 
 // scrollback on posts size
-const scrollBackHead = rollHead.height();
-const scrollBackItem = $("#achievments-list li.list-group-item").first().height();
+const projectsTag = $("#projects-tag");
+const achievmentsTag = $("#achievments-tag");
+const backAmount = projectsTag.height();
 
-const onRollFirst = $("#on-roll-head a.nav-link").first();
-const onRollRest = $("#on-roll-head a.nav-link").slice(1, $("#on-roll-head li.nav-item").length);
+const toBackRoll = $("#on-roll-head a.nav-link");
 
-
-onRollFirst.on("click", function (e) {
+toBackRoll.on("click", function (e) {
     e.preventDefault();
     $($(this).attr('href'))[0].scrollIntoView();
-    scrollBy(0, -scrollBackHead);
+    scrollBy(0, -backAmount);
 });
-
-onRollRest.on("click", function (e) {
-    console.log(scrollBackItem);
-    e.preventDefault();
-    $($(this).attr('href'))[0].scrollIntoView();
-    scrollBy(0, -scrollBackItem);
-});
-
 
 // scrollspy activation offset
 const offSet = $(window).height() * 0.2;

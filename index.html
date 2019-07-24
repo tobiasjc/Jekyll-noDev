@@ -4,34 +4,21 @@ layout: home
 permalink: "/"
 ---
 
-<div class="col" id="projects-div">
-    <ul class="list-group-flush" id="projects-list">
-        {% for post in site.posts %}
-        {% if post.belongs == "academic-work" %}
-        <li class="list-group-item">
-            {% for category in post.categories %}
-            {{ category }}
-            {% endfor %}
-            <br>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-</div>
 
-<div class="col" id="achievments-div">
-    <ul class="list-group-flush" id="achievments-list">
-        {% for post in site.posts %}
-        {% if post.belongs == "achievments" %}
-        <li class="list-group-item">
-            {% for category in post.categories %}
-            {{ category }}
+<div class="row">
+    <div class="col align-items-center text-center">
+        {% for category in site.categories %}
+        <ul class="list-group list-group-flush" id="projects-list">
+            <li class="list-group-item" id="projects-tag">
+                <h2>{{ category[0] }}</h2>
+            </li>
+            {% for post in category[1] %}
+            <li class="list-group-item">
+                {{ post.date | date_to_long_string }}
+                {{ post.title }}
+            </li>
             {% endfor %}
-            <br>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endif %}
+        </ul>
         {% endfor %}
-    </ul>
+    </div>
 </div>
