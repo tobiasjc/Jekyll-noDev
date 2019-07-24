@@ -2,7 +2,6 @@
     background: rgb(149, 251, 255);
 }
 
-
 .to-fade {
     visibility: hidden;
 }
@@ -13,4 +12,22 @@
     -webkit-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed|Frank+Ruhl+Libre|Taviraj|Petit+Formal+Script&display=swap');
+
+#logo-message {
+    font-family: 'Petit Formal Script', cursive;
+}
+
+[name="menu-text"] {
+    font-family: 'Taviraj', serif;
+}
+
+[name="legible-out"] {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+[name="titles-out"] {
+    font-family: 'Cabin Condensed', sans-serif;
 }

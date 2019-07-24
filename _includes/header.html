@@ -5,8 +5,8 @@
         <div class="col">
             <div class="row justify-content-center">
                 <div class="d-flex flex-column">
-                    <div><a class="navbar-brand" href="#nav-full">{{ site.author }}</a></div>
-                    <div class="muted small">{{ site.data.config.logo_message }}</div>
+                    <div><a class="navbar-brand" href="#nav-full" id="brand-name">{{ site.author }}</a></div>
+                    <div class="muted small" id="logo-message">{{ site.data.config.logo_message }}</div>
                 </div>
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,8 +29,8 @@
                                 <div class="col">
                                     <i class="{{ icon_category }} mr-2"></i>
                                 </div>
-                                <div class="col">
-                                    {{ titlecase_ord }}
+                                <div class="col" name="menu-text">
+                                    {{ titlecase_ord | strip }}
                                 </div>
                             </a>
                         </li>
@@ -40,7 +40,7 @@
                                 <div class="col">
                                     <i class="fa fa-question mr-2"></i>
                                 </div>
-                                <div class="col">
+                                <div class="col" name="menu-text">
                                     About
                                 </div>
                             </a>
@@ -64,7 +64,7 @@
                             <button class="btn">
                                 <i class="fa fa-user"></i>
                             </button>
-                            <span>jose.tobias@outlook.com</span>
+                            <span name="menu-text">jose.tobias@outlook.com</span>
                         </a>
                     </div>
                     <div class="card">
@@ -72,7 +72,7 @@
                             <button class="btn">
                                 <i class="fa fa-graduation-cap"></i>
                             </button>
-                            <span>a16007@bcc.unifal-mg.edu.br</span>
+                            <span name="menu-text">a16007@bcc.unifal-mg.edu.br</span>
                         </a>
                     </div>
                 </div>

@@ -19,10 +19,10 @@ permalink: "/"
             {% assign words = post.subcategory | split: "-" %}
             {% capture titlecase-subcategory %}{% for word in words %}{{ word | capitalize | append: " " }}{% endfor %}{% endcapture %}
             <li class="list-group-item">
-                {{ titlecase-subcategory }} <br />
-                {{ post.date | date_to_long_string }} <br />
-                {{ post.title }} <br />
-                {{ post.description }}
+                <span name="titles-out" >{{ titlecase-subcategory }}</span> <br />
+                <span name="legible-out">{{ post.date | date_to_long_string }}</span> <br />
+                <span name="titles-out">{{ post.title }}</span> <br />
+                <span name="legible-out">{{ post.description }}</span>
             </li>
             {% endfor %}
         </ul>
