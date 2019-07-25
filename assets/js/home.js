@@ -20,22 +20,18 @@ const triggerPoint = (header.height() - rollHead.height());
 const entities = [rollHead, rollFoot];
 
 // if the page is reload in the middle
-(height > triggerPoint) ? entities.forEach(shower) : entities.forEach(hider);
+(height >= triggerPoint) ? entities.forEach(shower) : entities.forEach(hider);
 
 // scroll control
 $(window).scroll(function () {
     var height = $(window).scrollTop();
-    (height > triggerPoint) ? entities.forEach(shower) : entities.forEach(hider);
+    (height >= triggerPoint) ? entities.forEach(shower) : entities.forEach(hider);
 });
 
 // scrollback on posts size
-const projectsTag = $("#projects-tag");
-const achievmentsTag = $("#achievments-tag");
-const backAmount = projectsTag.height();
+const backAmount = $("#projects-tag").height();
 
-const toBackRoll = $("a[name='need-roll'");
-
-toBackRoll.on("click", function (e) {
+$("a[name='need-roll']").on("click", function (e) {
     e.preventDefault();
     console.log(e.currentTarget);
     $($(this).attr('href'))[0].scrollIntoView();

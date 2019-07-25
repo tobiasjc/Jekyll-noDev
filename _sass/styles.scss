@@ -1,0 +1,37 @@
+.main-coloring {
+  background: rgb(149, 251, 255);
+}
+
+.to-fade {
+  visibility: hidden;
+}
+
+.dropdown-menu-center {
+  right: auto;
+  left: -50%;
+  -webkit-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Cabin+Condensed|Lora|Frank+Ruhl+Libre|Taviraj|Petit+Formal+Script&display=swap");
+
+#title-category {
+  font-family: "Lora", serif;
+}
+
+#logo-message {
+  font-family: "Petit Formal Script", cursive;
+}
+
+[name="menu-text"] {
+  font-family: "Taviraj", serif;
+}
+
+[name="legible-out"] {
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+[name="titles-out"] {
+  font-family: "Lora", serif;
+}
