@@ -1,5 +1,5 @@
 ---
-title: "Memetic TSP solver for data collector drone"
+title: "Memetic TSP Solver"
 author: "José Tobias"
 description: "Algorithm implemented using genetic algorithm and techniques to solve TSP problems, fitted to a data collector drone problem"
 layout: post

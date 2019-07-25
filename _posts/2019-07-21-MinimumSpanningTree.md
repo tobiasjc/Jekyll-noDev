@@ -1,7 +1,7 @@
 ---
-title: "Information Retrieval Framework for English Wikipedia of mathematical information"
+title: "Minimum Spanning Tree"
 author: "José Tobias"
-description: Implementation of "SIMPLES" language and translation to MIPS instructions
+description: Minimum spanning tree algorithm
 layout: post
 category: academic-projects
 subcategory: graphs

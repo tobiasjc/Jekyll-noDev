@@ -1,5 +1,5 @@
 ---
-title: "Shortest path with Bellman-Ford method and Dijkstra algorithm"
+title: "Bellman-Ford Shortest Path"
 author: "José Tobias"
 description: "An implementation of two famous algorithms to solve shortest path problems in graphs"
 layout: post

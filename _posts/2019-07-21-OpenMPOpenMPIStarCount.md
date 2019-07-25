@@ -1,5 +1,5 @@
 ---
-title: "OpenMP and OpenMPI framework to proccess images and count stars"
+title: "OpenMP and OpenMPI Framework"
 author: "José Tobias"
 description: "Framework to proccess images and count it's stars in a parallel computing platform"
 layout: post
