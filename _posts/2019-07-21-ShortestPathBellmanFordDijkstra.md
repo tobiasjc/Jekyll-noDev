@@ -3,8 +3,9 @@ title: "Bellman-Ford Shortest Path"
 author: "José Tobias"
 description: "An implementation of two famous algorithms to solve shortest path problems in graphs"
 layout: post
-category: academic-projects
+categories: academic-projects
 subcategory: graphs
+github-link: https://www.google.com
 ---
 
 This will be text here

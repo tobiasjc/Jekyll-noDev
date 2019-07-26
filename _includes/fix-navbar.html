@@ -1,39 +1,48 @@
-<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
-    <a href="https://www.github.com"><i class="fa fa-github"></i></a>
-    <p>{{page.name}}</p>
-    <a class="navbar-brand" href="#">{{ page.title }}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top main-coloring">
+    <div class="container-fluid justify-content-between row">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <div class="col col-sm-0">
+            <a class="navbar-brand" href="/">
+                {{site.author}}
+            </a>
+        </div>
+
+
+        <div class="col">
+            <span class="navbar-text">
+                {{ page.title }}
+            </span>
+        </div>
+
+
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container-fluid">
+                <ul class="navbar-nav flex-row justify-content-end">
+                    <li class="nav-item ml-3">
+                        {% if page.categories[0] contains "academic" %}
+
+                            <a class="nav-link" href={{ page.github-link }}>
+                                <i class="fa fa-github mr-2"></i>
+                                On GitHub
+                            </a>
+
+                        {% elsif page.categories[0] contains "achiev" %}
+
+                            <a class="nav-link" href={{ page.source-link }}>
+                                <i class="fa fa-star mr-2"></i>
+                                Source
+                            </a>
+
+                        {% endif %}
+                    </li>
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </nav>

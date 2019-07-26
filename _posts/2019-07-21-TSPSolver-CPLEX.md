@@ -3,8 +3,9 @@ title: "Incremental TSP Solver with IBM-CPLEX"
 author: "José Tobias"
 description: "An incremental solver for TSP problems using IBM-CPLEX and linear models with a cycle removal algorithm"
 layout: post
-category: academic-projects
+categories: academic-projects
 subcategory: compilers
+github-link: https://www.google.com
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum tempus mauris, et sollicitudin metus vulputate ut. In vel mi ultrices, mollis nisl id, interdum lacus. Proin eu nisi luctus, tincidunt arcu ac, semper mauris. Mauris ullamcorper pretium dictum. Etiam accumsan congue pellentesque. Mauris tincidunt leo eu ligula elementum, ut laoreet dui placerat. In id commodo orci, id dictum arcu. In dictum diam a eros pulvinar lacinia. Ut tempor sagittis pharetra. Integer id est quis diam dapibus efficitur. Curabitur gravida, mauris ut suscipit sodales, est felis semper orci, eu egestas arcu lectus nec ex. Vivamus tortor dui, tempus ut massa vitae, dictum mattis odio. Ut hendrerit rhoncus lorem, tincidunt sodales risus sagittis nec. Proin in ornare enim. Nunc aliquam nunc diam, ac tempus ante sollicitudin a. Maecenas justo justo, condimentum quis elit eu, tempus dictum justo.

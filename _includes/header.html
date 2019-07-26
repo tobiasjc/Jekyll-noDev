@@ -1,47 +1,53 @@
 <!--Main header-->
 <div class="container-fluid p-0">
-    <nav class="navbar navbar-expand-md navbar-light position-sticky main-coloring" id="nav-full">
+    <nav
+        class="navbar navbar-expand-md navbar-light position-sticky main-coloring" id="nav-full">
         <!--save start-->
         <div class="col">
             <div class="row justify-content-center">
                 <div class="d-flex flex-column">
-                    <div><a class="navbar-brand" href="#nav-full" id="brand-name">{{ site.author }}</a></div>
-                    <div class="muted small" id="logo-message">{{ site.data.config.logo_message }}</div>
+                    <div>
+                        <a class="navbar-brand" href="#nav-full" id="brand-name">{{ site.author }}</a>
+                    </div>
+                    <div class="muted small logo-message">{{ site.data.config.logo_message }}</div>
                 </div>
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ml-auto" data-target="#navbarContent" data-toggle="collapse" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse nav-pills ml-auto nav-justified" id="navbarContent">
                     <ul class="navbar-nav ml-auto">
                         {%- for category_ord in site.data.config.categories_ord -%}
-                        {%- assign words = category_ord | split: "-" -%}
-                        {%- capture titlecase_ord -%}{%- for word in words -%}{{ word | capitalize | append: " " }}{%- endfor -%}{%- endcapture -%}
-                        {%- capture icon_category -%}
-                        {%- for category_icon in site.data.config.categories_icons -%}
-                        {%- if category_ord contains category_icon[0] -%}
-                        {{ category_icon[1] }}
-                        {%- break -%}
-                        {%- endif -%}
-                        {%- endfor -%}
-                        {%- endcapture -%}
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#{{ category_ord }}" name="need-roll">
-                                <div class="col">
-                                    <i class="{{ icon_category }} mr-2"></i>
-                                </div>
-                                <div class="col" name="menu-text">
-                                    {{ titlecase_ord }}
-                                </div>
-                            </a>
-                        </li>
+                            {%- assign words = category_ord | split: "-" -%}
+                            {%- capture titlecase_ord -%}
+                                {%- for word in words -%}
+                                    {{ word | capitalize | append: " " }}
+                                {%- endfor -%}
+                            {%- endcapture -%}
+                            {%- capture icon_category -%}
+                                {%- for category_icon in site.data.config.categories_icons -%}
+                                    {%- if category_ord contains category_icon[0] -%}
+                                        {{ category_icon[1] }}
+                                        {%- break -%}
+                                    {%- endif -%}
+                                {%- endfor -%}
+                            {%- endcapture -%}
+                            <li class="nav-item" data-target=".navbar-collapse.show" data-toggle="collapse">
+                                <a class="nav-link" href="#{{ category_ord }}" name="need-roll">
+                                    <div class="col">
+                                        <i class="{{ icon_category }} mr-2"></i>
+                                    </div>
+                                    <div class="col menu-text">
+                                        {{ titlecase_ord }}
+                                    </div>
+                                </a>
+                            </li>
                         {%- endfor -%}
                         <li class="nav-item">
                             <a class="nav-link" href="/about/">
                                 <div class="col">
                                     <i class="fa fa-question mr-2"></i>
                                 </div>
-                                <div class="col" name="menu-text">
+                                <div class="col menu-text">
                                     About
                                 </div>
                             </a>
@@ -51,12 +57,10 @@
             </div>
             <hr>
             <div class="row p-3">
-                <img src="./assets/images/thumb.png" class="rounded-circle mx-auto d-block" width="240"
-                    alt="A photo of José Tobias in 2017, smiling in front of books, after being classified for the 2017 Data Science Game finals." />
+                <img alt="A photo of José Tobias in 2017, smiling in front of books, after being classified for the 2017 Data Science Game finals." class="rounded-circle mx-auto d-block" src="./assets/images/thumb.png" width="240"/>
             </div>
             <div class="row justify-content-center m-2">
-                <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#emails" aria-expanded="false"
-                    aria-controls="emails">
+                <a aria-controls="emails" aria-expanded="false" class="btn btn-primary btn-lg" data-toggle="collapse" href="#emails">
                     <i class="fa fa-envelope"></i>
                 </a>
             </div>
@@ -67,7 +71,7 @@
                             <button class="btn">
                                 <i class="fa fa-user"></i>
                             </button>
-                            <span name="menu-text">jose.tobias@outlook.com</span>
+                            <span class="menu-text">jose.tobias@outlook.com</span>
                         </a>
                     </div>
                     <div class="card">
@@ -75,7 +79,7 @@
                             <button class="btn">
                                 <i class="fa fa-graduation-cap"></i>
                             </button>
-                            <span name="menu-text">a16007@bcc.unifal-mg.edu.br</span>
+                            <span class="menu-text">a16007@bcc.unifal-mg.edu.br</span>
                         </a>
                     </div>
                 </div>
@@ -83,13 +87,13 @@
             <div class="row justify-content-center m-2">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="btn btn-sm" target="_blank" href="https://linkedin.com/in/tobiasjc">
+                        <a class="btn btn-sm" href="https://linkedin.com/in/tobiasjc" target="_blank">
                             <i class="fa fa-linkedin"></i>
                             Linkedin
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-sm" target="_blank" href="https://github.com/tobiasjc">
+                        <a class="btn btn-sm" href="https://github.com/tobiasjc" target="_blank">
                             <i class=" fa fa-github-alt"></i>
                             GitHub
                         </a>

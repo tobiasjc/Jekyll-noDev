@@ -12,7 +12,7 @@ function shower(e) {
 // scroll height marker
 var height = $(window).scrollTop();
 
-// entities to be managed
+// entities to be manageda
 const header = $("#nav-full");
 const rollHead = $("#on-roll-head");
 const rollFoot = $("#on-roll-foot");

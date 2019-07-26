@@ -1,25 +1,40 @@
-<nav class="navbar navbar-expand-md justify-content-between navbar-light fixed-top to-fade main-coloring"
-    id="on-roll-head">
-    <a href="#"><button class="btn btn-sm nav-link btn-primary btn-md"><i class="fa fa-arrow-up"
-                aria-hidden="true"></i></button></a>
-    <a class="navbar-brand ml-auto nav-link" href="#nav-full" name="legible-out">{{ site.author }}</a>
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#fadedNavbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-md justify-content-between navbar-light fixed-top to-fade main-coloring" id="on-roll-head">
+    <a href="#">
+        <button class="btn btn-sm nav-link btn-primary btn-md">
+            <i aria-hidden="true" class="fa fa-arrow-up"></i>
+        </button>
+    </a>
+    <a class="navbar-brand ml-auto nav-link legible" href="#nav-full">{{ site.author }}</a>
+    <button aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ml-auto" data-target="#fadedNavbarContent" data-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse justify-content-end navbar-collapse nav-pills ml-auto" id="fadedNavbarContent">
         <ul class="nav nav-pills">
             <div class="container">
-                <div class="row">
                     {% for category in site.data.config.categories_ord %}
-                    <li class="nav-item ll-5" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        {%- assign words = category | split: "-" -%}
-                        {%- capture titlecase_ord -%}{% for word in words -%}{{ word | capitalize | append: " " }}{%- endfor -%}{%- endcapture -%}
-                        <div class="p-1">
-                            <a class="nav-link" href="#{{ category }}" name="need-roll"><span class="p-2"
-                                    name="menu-text">{{ titlecase_ord }}</span></a>
-                        </div>
-                    </li>
+                    <div class="row"></div>
+                        <li class="nav-item ll-5" data-target=".navbar-collapse.show" data-toggle="collapse">
+                            {%- assign words = category | split: "-" -%}
+                            {%- capture category_ord -%}
+                                {% for word in words -%}
+                                    {{ word | capitalize | append: " " }}
+                                {%- endfor -%}
+                            {%- endcapture -%}
+                            <div class="p-1">
+                                {%- capture icon_category -%}
+                                {%- for category_icon in site.data.config.categories_icons -%}
+                                    {%- if category contains category_icon[0] -%}
+                                        {{ category_icon[1] }}
+                                        {%- break -%}
+                                    {%- endif -%}
+                                {%- endfor -%}
+                                {%- endcapture -%}
+                                <a class="nav-link" href="#{{ category }}" name="need-roll">
+                                    <span class="p-2 menu-text">{{ category_ord }}</span>
+                                    <i class="{{ icon_category }} mr-2"></i>
+                                </a>
+                            </div>
+                        </li>
                     {%- endfor -%}
                 </div>
             </div>

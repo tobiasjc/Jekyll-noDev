@@ -3,8 +3,9 @@ title: "Minimum Spanning Tree"
 author: "José Tobias"
 description: Minimum spanning tree algorithm
 layout: post
-category: academic-projects
+categories: academic-projects
 subcategory: graphs
+github-link: https://www.google.com
 ---
 
 This will be text here
