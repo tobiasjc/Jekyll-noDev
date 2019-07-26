@@ -11,8 +11,8 @@
     <div class="collapse justify-content-end navbar-collapse nav-pills ml-auto" id="fadedNavbarContent">
         <ul class="nav nav-pills">
             <div class="container">
-                    {% for category in site.data.config.categories_ord %}
-                    <div class="row"></div>
+                {% for category in site.data.config.categories_ord %}
+                    <div class="row">
                         <li class="nav-item ll-5" data-target=".navbar-collapse.show" data-toggle="collapse">
                             {%- assign words = category | split: "-" -%}
                             {%- capture category_ord -%}
@@ -22,12 +22,12 @@
                             {%- endcapture -%}
                             <div class="p-1">
                                 {%- capture icon_category -%}
-                                {%- for category_icon in site.data.config.categories_icons -%}
-                                    {%- if category contains category_icon[0] -%}
-                                        {{ category_icon[1] }}
-                                        {%- break -%}
-                                    {%- endif -%}
-                                {%- endfor -%}
+                                    {%- for category_icon in site.data.config.categories_icons -%}
+                                        {%- if category contains category_icon[0] -%}
+                                            {{ category_icon[1] }}
+                                            {%- break -%}
+                                        {%- endif -%}
+                                    {%- endfor -%}
                                 {%- endcapture -%}
                                 <a class="nav-link" href="#{{ category }}" name="need-roll">
                                     <span class="p-2 menu-text">{{ category_ord }}</span>
