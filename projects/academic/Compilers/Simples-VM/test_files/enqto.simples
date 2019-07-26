@@ -1,0 +1,21 @@
+programa enqto
+	inteiro a
+inicio
+	leia a
+	enquanto a < 10  faca
+		leia a
+		enquanto a < 20 faca
+			se a > 10 entao
+				escreva a
+				se a < 8 entao
+					escreva a
+				senao
+				fimse
+			senao
+				escreva a
+			fimse
+			leia a
+		fimenquanto
+	fimenquanto
+	escreva a
+fimprograma

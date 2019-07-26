@@ -1,0 +1,4 @@
+master slots=4 max-slots=4
+client2 slots=4 max-slots=4
+client3 slots=4 max-slots=4
+clinet4 slots=4 max-slots=4

@@ -1,0 +1,15 @@
+programa test
+	inteiro a
+inicio
+	leia a
+	se a > 10 entao
+		leia a
+		se a < 10 entao
+			escreva a
+		senao
+			leia a
+		fimse
+	senao
+	fimse
+	escreva a
+fimprograma

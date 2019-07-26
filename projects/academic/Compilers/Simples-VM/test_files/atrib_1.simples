@@ -1,0 +1,5 @@
+programa atrib1
+	inteiro a
+inicio
+	a <- 10
+fimprograma

@@ -37,7 +37,7 @@ permalink: "/"
                                     <span class="legible" class="muted">{{ post.date | date_to_long_string }}</span>
                                 </i>
                                 <br/>
-                                <a href="{{ post.url | prepend: site.baseurl}}">
+                                <a href="{{ post.source | prepend: site.baseurl}}">
                                     <span name="titles-out">{{ post.title }}</span>
                                 </a>
                                 <br/>

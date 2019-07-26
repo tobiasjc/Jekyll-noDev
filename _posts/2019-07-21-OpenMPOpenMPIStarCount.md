@@ -5,7 +5,7 @@ description: "Framework to proccess images and count it's stars in a parallel co
 layout: post
 categories: academic-projects
 subcategory: parallel-programming-/-image-processing
-github-link: https://www.google.com
+source: https://www.google.com
 ---
 
 This will be text here

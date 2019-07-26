@@ -1,0 +1,8 @@
+# ninja log v5
+0	48	1562372051	CMakeFiles/Contour.dir/src/main.c.o	3169e34330697212
+0	61	1562372051	CMakeFiles/Contour.dir/src/tracker.c.o	eef6892d6ffeb4e0
+0	62	1562372051	CMakeFiles/Contour.dir/src/imagelib.c.o	2e9661d897523031
+1	87	1562372051	CMakeFiles/Contour.dir/src/converter.c.o	1ce2347bea8844d3
+0	88	1562372051	CMakeFiles/Contour.dir/src/logger.c.o	4ba36d82ed24648d
+0	104	1562372051	CMakeFiles/Contour.dir/src/contour_check.c.o	b5f432291fe53a2c
+104	119	1562372051	Contour	d8176423e97b3afd

@@ -1,0 +1,4 @@
+programa hello
+inicio
+	escreva "hello, world!"
+fimprograma

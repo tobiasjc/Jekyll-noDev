@@ -5,7 +5,7 @@ description: Implementation of the Ford Fulkerson algorithm to find the maximum 
 layout: post
 categories: academic-projects
 subcategory: graphs
-github-link: https://www.google.com
+source: https://www.google.com
 ---
 
 This will be text here

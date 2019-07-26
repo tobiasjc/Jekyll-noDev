@@ -1,0 +1,5 @@
+programa escreveexpr
+	inteiro a b c
+inicio
+	escreva 2*2-4*1*3
+fimprograma

@@ -1,0 +1,12 @@
+programa le
+	inteiro a
+inicio
+	leia a
+	se nao (a > 1) entao
+		escreva a
+		enquanto (a < 1) faca
+			escreva a
+		fimenquanto
+	senao
+	fimse
+fimprograma

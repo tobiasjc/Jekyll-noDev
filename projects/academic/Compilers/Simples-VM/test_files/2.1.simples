@@ -1,0 +1,15 @@
+programa dois
+	inteiro a b
+inicio
+	leia a
+	enquanto a < 10 faca
+		leia a
+		se a < 10 entao
+			b <- a
+		senao
+			b <- nao  verdade
+		fimse
+	fimenquanto
+	escreva a
+	escreva b
+fimprograma

@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/build/cmake.debug.linux.x86_64",
+  "command": "/usr/bin/cc  -I../.././includes  -g   -o CMakeFiles/Contour.dir/src/main.c.o   -c /home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/main.c",
+  "file": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/main.c"
+},
+
+{
+  "directory": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/build/cmake.debug.linux.x86_64",
+  "command": "/usr/bin/cc  -I../.././includes  -g   -o CMakeFiles/Contour.dir/src/tracker.c.o   -c /home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/tracker.c",
+  "file": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/tracker.c"
+},
+
+{
+  "directory": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/build/cmake.debug.linux.x86_64",
+  "command": "/usr/bin/cc  -I../.././includes  -g   -o CMakeFiles/Contour.dir/src/imagelib.c.o   -c /home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/imagelib.c",
+  "file": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/imagelib.c"
+},
+
+{
+  "directory": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/build/cmake.debug.linux.x86_64",
+  "command": "/usr/bin/cc  -I../.././includes  -g   -o CMakeFiles/Contour.dir/src/contour_check.c.o   -c /home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/contour_check.c",
+  "file": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/contour_check.c"
+},
+
+{
+  "directory": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/build/cmake.debug.linux.x86_64",
+  "command": "/usr/bin/cc  -I../.././includes  -g   -o CMakeFiles/Contour.dir/src/logger.c.o   -c /home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/logger.c",
+  "file": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/logger.c"
+},
+
+{
+  "directory": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/build/cmake.debug.linux.x86_64",
+  "command": "/usr/bin/cc  -I../.././includes  -g   -o CMakeFiles/Contour.dir/src/converter.c.o   -c /home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/converter.c",
+  "file": "/home/jose/Dropbox/university/7th/PI/image-processing/Contour/src/converter.c"
+}
+]

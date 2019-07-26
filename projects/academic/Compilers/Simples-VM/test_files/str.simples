@@ -1,0 +1,5 @@
+programa str
+	inteiro b
+inicio
+	escreva "aa"
+fimprograma

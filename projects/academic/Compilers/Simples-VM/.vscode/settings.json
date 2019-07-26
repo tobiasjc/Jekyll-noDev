@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "pilha.h": "c",
+        "stdint.h": "c",
+        "cstdint": "c",
+        "stack_mips.h": "c"
+    }
+}

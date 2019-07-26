@@ -1,0 +1,8 @@
+programa escrita
+	inteiro a
+inicio
+	escreva "digite um valor para a: "
+	leia a
+	escreva "o valor digitado para a foi: "
+	escreva a
+fimprograma

@@ -1,0 +1,5 @@
+programa test
+	inteiro A
+inicio
+	escreva A
+fimprograma

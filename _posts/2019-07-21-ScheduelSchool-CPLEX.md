@@ -5,7 +5,7 @@ description: "Linear model capable of formulate school schedules using various q
 layout: post
 categories: academic-projects
 subcategory: operations-research
-github-link: https://www.google.com
+source: https://www.google.com
 ---
 
 This will be text here

@@ -1,0 +1,8 @@
+programa teste
+	booleano a
+inicio
+	a <- falso
+	enquanto nao (a) faca
+		leia a
+	fimenquanto
+fimprograma

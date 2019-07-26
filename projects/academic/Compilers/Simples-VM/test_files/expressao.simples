@@ -1,0 +1,5 @@
+programa expressao
+	inteiro a
+inicio
+	a <- (2 + 5) * 4
+fimprograma

@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/Contour.dir/src/main.c.o CMakeFiles/Contour.dir/src/tracker.c.o CMakeFiles/Contour.dir/src/imagelib.c.o CMakeFiles/Contour.dir/src/contour_check.c.o CMakeFiles/Contour.dir/src/logger.c.o CMakeFiles/Contour.dir/src/converter.c.o  -o Contour -lm 

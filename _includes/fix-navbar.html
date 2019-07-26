@@ -1,20 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top main-coloring">
     <div class="container-fluid justify-content-between row">
-
         <div class="col col-sm-0">
             <a class="navbar-brand" href="/">
                 {{site.author}}
             </a>
         </div>
-
-
         <div class="col">
             <span class="navbar-text">
                 {{ page.title }}
             </span>
         </div>
-
-
         <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,21 +18,15 @@
             <div class="container-fluid">
                 <ul class="navbar-nav flex-row justify-content-end">
                     <li class="nav-item ml-3">
-                        {% if page.categories[0] contains "academic" %}
-
-                            <a class="nav-link" href={{ page.github-link }}>
-                                <i class="fa fa-github mr-2"></i>
-                                On GitHub
+                            <a class="nav-link" href={{ page.source }}>
+                                {% if page.categories[0] contains "academic" %}
+                                    <i class="fa fa-github mr-2"></i>
+                                    On GitHub
+                                {% elsif page.categories[0] contains "achiev" %}
+                                    <i class="fa fa-star mr-2"></i>
+                                    Source
+                                {% endif %}
                             </a>
-
-                        {% elsif page.categories[0] contains "achiev" %}
-
-                            <a class="nav-link" href={{ page.source-link }}>
-                                <i class="fa fa-star mr-2"></i>
-                                Source
-                            </a>
-
-                        {% endif %}
                     </li>
                         <a class="nav-link" href="/">Home</a>
                     </li>

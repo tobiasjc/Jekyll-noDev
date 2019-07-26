@@ -5,7 +5,7 @@ description: Implementation of "SIMPLES" language and translation to MIPS instru
 layout: post
 categories: academic-projects
 subcategory: compilers
-github-link: https://www.google.com
+source: https://www.google.com
 ---
 
 This will be text here

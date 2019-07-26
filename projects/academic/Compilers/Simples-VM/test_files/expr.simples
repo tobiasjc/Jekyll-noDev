@@ -1,0 +1,6 @@
+programa expr
+	inteiro a b c
+inicio
+	a <- 1 * 2 - 4 + 5
+	escreva a
+fimprograma

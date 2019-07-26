@@ -1,0 +1,6 @@
+programa testatrib
+	inteiro a
+inicio
+	a <- a * 2
+	escreva a
+fimprograma

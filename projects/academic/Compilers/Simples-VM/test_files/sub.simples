@@ -1,0 +1,8 @@
+programa subtrai
+	inteiro a b
+inicio
+	leia a
+	leia b
+	a <- a - b
+	escreva a
+fimprograma

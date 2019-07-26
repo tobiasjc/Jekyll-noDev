@@ -1,0 +1,5 @@
+programa saida
+	inteiro a
+inicio
+	escreva a + 10
+fimprograma

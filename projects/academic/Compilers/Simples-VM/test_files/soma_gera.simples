@@ -1,0 +1,11 @@
+programa somas
+	inteiro a b
+inicio
+	escreva "entre com o valor de a: "
+	leia a
+	escreva "entre com o valor de b: "
+	leia b
+	a <- a + b
+	escreva "o resultado da soma de 'a' e 'b' em 'a' é: "
+	escreva a
+fimprograma

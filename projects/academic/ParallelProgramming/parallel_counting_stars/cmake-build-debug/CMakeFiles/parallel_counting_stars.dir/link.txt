@@ -1,0 +1,1 @@
+mpicc -fopenmp -g   CMakeFiles/parallel_counting_stars.dir/main.c.o CMakeFiles/parallel_counting_stars.dir/src/fifo_pix_queue.c.o CMakeFiles/parallel_counting_stars.dir/src/imagelib.c.o CMakeFiles/parallel_counting_stars.dir/src/list_link.c.o  -o parallel_counting_stars /usr/lib/x86_64-linux-gnu/libpng.so -lm 

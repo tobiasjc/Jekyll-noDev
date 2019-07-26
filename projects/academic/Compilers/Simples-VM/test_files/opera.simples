@@ -1,0 +1,6 @@
+programa aaa
+	inteiro a
+inicio
+	leia a
+	escreva a
+fimprograma

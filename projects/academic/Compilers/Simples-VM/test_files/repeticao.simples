@@ -1,0 +1,16 @@
+programa repete
+	inteiro a b c
+	booleano d f g
+inicio
+	d <- verdadeiro
+	escreva "isto não é verdadeiro"
+	leia a
+	enquanto a < 10 faca
+		leia a
+		enquanto a > 10 faca
+			leia a
+		fimenquanto
+	fimenquanto
+	escreva a
+	escreva b * b - 4 * a * c
+fimprograma

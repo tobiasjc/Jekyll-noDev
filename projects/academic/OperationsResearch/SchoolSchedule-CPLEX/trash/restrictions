@@ -1,0 +1,13 @@
+//			// all classes horary must be filled (maybe double guaranteed by the maximize
+////			 objective function)
+//			for (int d = 0; d < env.getDayQuantity(); d++) {
+//				for (int c = 0; c < env.getClassQuantity(); c++) {
+//					for (int h = 0; h < env.getHoraryQuantity(); h++) {
+//						IloLinearIntExpr r = model.linearIntExpr();
+//						for (int p = 0; p < env.getProfessorQuantity(); p++) {
+//							r.addTerm(1, x[p][d][c][h]);
+//						}
+//						model.addEq(r, 1);
+//					}
+//				}
+//			}

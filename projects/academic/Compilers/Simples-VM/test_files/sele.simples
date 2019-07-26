@@ -1,0 +1,10 @@
+programa sesimples
+	inteiro A
+inicio
+	leia A
+	se A < 10 entao
+		leia A
+	senao
+	fimse
+	escreva A
+fimprograma

@@ -1,0 +1,15 @@
+programa teste
+	inteiro A
+inicio
+	leia A
+	enquanto A < 10 faca
+		leia A
+		se A < 2 entao
+			leia A
+			escreva A
+		senao
+			escreva A
+		fimse
+	fimenquanto
+	escreva A
+fimprograma

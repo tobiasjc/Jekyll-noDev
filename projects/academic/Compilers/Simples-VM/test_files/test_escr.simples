@@ -1,0 +1,6 @@
+programa teste
+	inteiro a
+inicio
+	a <- 3 * 3 * 3 / 7
+	escreva a
+fimprograma

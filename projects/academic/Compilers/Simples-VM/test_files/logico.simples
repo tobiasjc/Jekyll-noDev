@@ -1,0 +1,5 @@
+programa loggggg
+	booleano a
+inicio
+	a <- 10
+fimprograma

@@ -1,0 +1,11 @@
+programa segera
+	inteiro a
+inicio
+	escreva "aaaaaaaaaaaa"
+	escreva "bbbbbbbbb"
+
+	se a > 10 entao
+		escreva a
+	senao
+	fimse
+fimprograma

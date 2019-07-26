@@ -1,0 +1,17 @@
+programa selecao
+	inteiro a b
+inicio
+	a <- 1
+	b <- 2
+	se a > b entao
+		se a > b entao
+			a <- b
+		senao
+			a <- b
+		fimse
+		a <- b
+	senao
+		b <- a
+	fimse
+	escreva "dslfsd"
+fimprograma

@@ -5,7 +5,7 @@ description: "A framework capable of populate multiple databases ready for IR me
 layout: post
 categories: academic-projects
 subcategory: information-retrieval
-github-link: https://www.google.com
+source: /projects/academic/InformationRetrieval/
 ---
 
 This will be text here

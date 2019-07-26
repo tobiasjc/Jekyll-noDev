@@ -1,0 +1,3 @@
+/home/josetobias/Dropbox/university/7th/CP/parallel_counting_stars/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/josetobias/Dropbox/university/7th/CP/parallel_counting_stars/cmake-build-debug/CMakeFiles/parallel_counting_stars.dir
+/home/josetobias/Dropbox/university/7th/CP/parallel_counting_stars/cmake-build-debug/CMakeFiles/edit_cache.dir

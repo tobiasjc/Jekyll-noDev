@@ -1,0 +1,17 @@
+programa temraiz
+	inteiro a b c delta
+inicio
+	leia a
+	leia b
+	leia c
+	delta <- b * b - 4 * a * c
+	se delta < 0 entao
+		escreva 0
+	senao
+		se delta = 0 entao
+			escreva 1
+		senao
+			escreva 2
+		fimse
+	fimse
+fimprograma

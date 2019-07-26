@@ -5,7 +5,7 @@ description: "An implementation of two famous algorithms to solve shortest path 
 layout: post
 categories: academic-projects
 subcategory: graphs
-github-link: https://www.google.com
+source: https://www.google.com
 ---
 
 This will be text here

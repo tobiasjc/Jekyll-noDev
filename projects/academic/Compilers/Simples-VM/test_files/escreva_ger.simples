@@ -1,0 +1,8 @@
+programa simsd
+	inteiro a b c delta
+inicio
+	leia a
+	leia b
+	leia c
+	delta <- b * b - 4 * a * c
+fimprograma
